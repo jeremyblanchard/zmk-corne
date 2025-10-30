@@ -68,8 +68,18 @@
             bindings = <
 &kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS         &kp ASTRK      &kp LPAR          &kp RPAR           &kp BSPC
 &kp LCTRL  &trans    &trans  &trans    &trans    &kp COLON    &kp MINUS  &kp EQUAL        &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &kp SEMI     &kp UNDER  &kp PLUS         &kp PIPE       &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp TILDE
+&kp LSHFT  &tog 3    &trans  &trans    &trans    &kp SEMI     &kp UNDER  &kp PLUS         &kp PIPE       &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp TILDE
                              &kp DEL   &kp LALT  &kp LGUI     &kp SPACE  &kp RIGHT_SHIFT  &trans
+            >;
+        };
+
+        qwerty_layer {
+            display-name = "QWERTY Layer";
+            bindings = <
+&kp TAB    &kp Q  &kp W        &kp F         &kp P       &kp B            &kp J      &kp L            &kp U       &kp Y        &kp SQT   &kp BSPC
+&kp GRAVE  &kp A  &mt LCTRL R  &mt LALT S    &mt LGUI T  &kp G            &kp M      &mt RGUI N       &mt RALT E  &mt RCTRL I  &kp O     &kp RET
+&kp LSHFT  &kp Z  &kp X        &mt K_COPY C  &kp D       &mt K_PASTE V    &kp K      &kp H            &kp COMMA   &kp DOT      &kp FSLH  &kp ESC
+                               &mo 1         &kp LALT    &kp LGUI         &kp SPACE  &kp RIGHT_SHIFT  &mo 2
             >;
         };
     };
