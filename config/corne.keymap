@@ -49,10 +49,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB           &kp N1      &mt LG(LA(N2)) N2  &kp N3        &mt LG(LS(N4)) N4  &kp N5       &kp N6     &kp N7       &kp N8       &kp N9        &kp N0          &kp BSPC
-&kp LEFT_CONTROL  &kp LEFT    &kp DOWN           &kp UP        &kp RIGHT          &kp EQUAL    &kp MINUS  &mt LGUI N4  &mt LALT N5  &mt LCTRL N6  &mt LSHFT PLUS  &kp ASTRK
-&kp LSHFT         &bt BT_CLR  &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2       &trans       &kp N0     &kp N1       &kp N2       &kp N3        &kp PERIOD      &kp SLASH
-                                                 &trans        &kp LALT           &kp LGUI     &kp SPACE  &kp RSHIFT   &kp DEL
+&kp TAB           &kp N1      &mt LG(LA(N2)) N2  &kp N3        &mt LG(LS(N4)) N4  &kp N5            &kp N6     &kp N7       &kp N8       &kp N9        &kp N0          &kp BSPC
+&kp LEFT_CONTROL  &kp LEFT    &kp DOWN           &kp UP        &kp RIGHT          &kp EQUAL         &kp MINUS  &mt LGUI N4  &mt LALT N5  &mt LCTRL N6  &mt LSHFT PLUS  &kp ASTRK
+&kp LSHFT         &bt BT_CLR  &bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2       &studio_unlock    &kp N0     &kp N1       &kp N2       &kp N3        &kp PERIOD      &kp SLASH
+                                                 &trans        &kp LALT           &kp LGUI          &kp SPACE  &kp RSHIFT   &kp DEL
             >;
         };
 
