@@ -35,7 +35,7 @@
 &kp TAB    &kp Q        &kp W        &kp F        &kp P            &kp B             &kp J             &kp L         &kp U       &kp Y        &kp SQT      &kp BSPC
 &kp GRAVE  &mt LSHFT A  &mt LCTRL R  &mt LALT S   &mt LGUI T       &kp G             &kp M             &mt RGUI N    &mt RALT E  &mt RCTRL I  &mt RSHFT O  &kp SEMI
 &kp LSHFT  &kp Z        &kp X        &mt LG(C) C  &mt LG(LS(V)) D  &mt LG(V) V       &kp K             &kp H         &kp COMMA   &kp DOT      &kp FSLH     &mt RALT ESC
-                                     &mo 1        &lt 1 BACKSPACE  &mt ENTER LGUI    &mt RSHIFT SPACE  &lt 2 DELETE  &mo 2
+                                     &mo 1        &lt 1 BACKSPACE  &mt LGUI ENTER    &mt RSHIFT SPACE  &lt 2 DELETE  &mo 2
             >;
         };
 
