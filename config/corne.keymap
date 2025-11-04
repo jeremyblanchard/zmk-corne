@@ -66,8 +66,8 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q         &kp W         &kp F        &kp P            &kp B          &kp J             &kp L            &kp U        &kp Y         &kp SQT       &kp BSPC
-&kp GRAVE  &hml LSHFT A  &hml LCTRL R  &hml LALT S  &hml LGUI T      &kp G          &kp M             &hmr RGUI N      &hmr RALT E  &hmr RCTRL I  &hmr RSHFT O  &kp SEMI
+&kp TAB    &kp Q         &kp W         &kp F        &kp P            &kp B          &kp J             &kp L            &kp U        &kp Y         &kp SEMI       &kp BSPC
+&kp GRAVE  &hml LSHFT A  &hml LCTRL R  &hml LALT S  &hml LGUI T      &kp G          &kp M             &hmr RGUI N      &hmr RALT E  &hmr RCTRL I  &hmr RSHFT O  &kp SQT
 &kp LSHFT  &kp Z         &kp X         &mt LG(C) C  &mt LG(LS(V)) D  &mt LG(V) V    &kp K             &kp H            &kp COMMA    &kp DOT       &kp FSLH      &mt RALT ESC
                                        &mo 1        &lt 1 ENTER      &kp LGUI       &mt RSHIFT SPACE  &lt 2 BACKSPACE  &mo 2
             >;
