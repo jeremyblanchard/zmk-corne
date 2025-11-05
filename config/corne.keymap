@@ -17,6 +17,13 @@
 
             label = "COPY";
         };
+
+        email: email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp J &kp J &kp M &kp B &kp L &kp A &kp N &kp C &kp H &kp A &kp R &kp D &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "EMAIL";
+        };
     };
 
     behaviors {
@@ -107,10 +114,10 @@
             >;
         };
 
-        bt_layer {
+        utility_layer {
             bindings = <
 &trans  &trans          &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans  &trans  &trans  &trans    &trans  &email  &trans  &trans  &trans  &trans
 &trans  &bt BT_CLR_ALL  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                 &trans  &trans  &trans    &trans  &trans  &trans
             >;
