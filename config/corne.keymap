@@ -75,7 +75,7 @@
             bindings = <
 &kp TAB    &kp Q         &kp W         &kp F        &kp P            &kp B          &kp J             &kp L            &kp U        &kp Y         &kp SEMI       &kp BSPC
 &kp GRAVE  &hml LSHFT A  &hml LCTRL R  &hml LALT S  &hml LGUI T      &kp G          &kp M             &hmr RGUI N      &hmr RALT E  &hmr RCTRL I  &hmr RSHFT O  &kp SQT
-&kp LSHFT  &kp Z         &kp X         &mt LG(C) C  &mt LG(LS(V)) D  &mt LG(V) V    &kp K             &kp H            &kp COMMA    &kp DOT       &kp FSLH      &mt RALT ESC
+&kp LSHFT  &kp Z         &kp X         &hml LG(C) C  &hml LG(LS(V)) D  &hml LG(V) V    &kp K             &kp H            &kp COMMA    &kp DOT       &kp FSLH      &hmr RALT ESC
                                        &mo 1        &lt 1 ENTER      &kp LGUI       &mt RSHIFT SPACE  &lt 2 BACKSPACE  &mo 2
             >;
         };
@@ -90,8 +90,8 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB           &kp N1        &mt LG(LA(N2)) N2  &kp N3        &mt LG(LS(N4)) N4  &kp N5            &kp N6            &kp N7       &kp N8       &kp N9        &kp N0          &kp BSPC
-&kp LEFT_CONTROL  &kp LEFT      &kp DOWN           &kp UP        &kp RIGHT          &kp EQUAL         &kp MINUS         &mt LGUI N4  &mt LALT N5  &mt LCTRL N6  &mt LSHFT PLUS  &kp ASTRK
+&kp TAB           &kp N1        &hml LG(LA(N2)) N2  &kp N3        &hml LG(LS(N4)) N4  &kp N5            &kp N6            &kp N7       &kp N8       &kp N9        &kp N0          &kp BSPC
+&kp LEFT_CONTROL  &kp LEFT      &kp DOWN           &kp UP        &kp RIGHT          &kp EQUAL         &kp MINUS         &hmr LGUI N4  &hmr LALT N5  &hmr LCTRL N6  &hmr LSHFT PLUS  &kp ASTRK
 &kp LSHFT         &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3       &studio_unlock    &kp N0            &kp N1       &kp N2       &kp N3        &kp PERIOD      &kp SLASH
                                                    &trans        &kp RET            &kp LGUI          &mt LSHIFT SPACE  &lt 3 DEL    &kp N0
             >;
