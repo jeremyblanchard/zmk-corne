@@ -58,6 +58,14 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20>;
             hold-trigger-on-release;
         };
+
+        swap_colon_semi: swap_colon_semi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SWAP_COLON_SEMI";
+            #binding-cells = <0>;
+            bindings = <&kp COLON>, <&kp SEMI>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -73,9 +81,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp W         &kp L         &kp Y         &kp P             &kp B         &kp Z             &kp F            &kp O        &kp U         &kp SEMI      &kp BSPC
-&kp GRAVE  &hml LSHFT C  &hml LCTRL R  &hml LALT S   &hml LGUI T       &kp G         &kp M             &hmr RGUI N      &hmr RALT E  &hmr RCTRL I  &hmr RSHFT A  &kp SQT
-&kp LSHFT  &kp Q         &kp J         &hml LG(C) V  &hml LG(LS(V)) D  &hml LG(V) K  &kp X             &kp H            &kp COMMA    &kp DOT       &kp FSLH      &hmr RALT ESC
+&kp TAB    &kp W         &kp L         &kp Y         &kp P             &kp B         &kp Z             &kp F            &kp O        &kp U         &swap_colon_semi     &kp BSPC
+&kp GRAVE  &hml LSHFT C  &hml LCTRL R  &hml LALT S   &hml LGUI T       &kp G         &kp M             &hmr RGUI N      &hmr RALT E  &hmr RCTRL I  &hmr RSHFT A         &kp SQT
+&kp LSHFT  &kp Q         &kp J         &hml LG(C) V  &hml LG(LS(V)) D  &hml LG(V) K  &kp X             &kp H            &kp COMMA    &kp DOT       &kp FSLH             &hmr RALT ESC
                                        &mo 1         &lt 1 ENTER       &kp LGUI      &mt RSHIFT SPACE  &lt 2 BACKSPACE  &mo 2
             >;
         };
