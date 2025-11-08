@@ -81,10 +81,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp W         &kp L         &kp Y         &kp P             &kp B         &kp Z             &kp F            &kp O        &kp U         &swap_colon_semi     &kp BSPC
-&kp GRAVE  &hml LSHFT C  &hml LCTRL R  &hml LALT S   &hml LGUI T       &kp G         &kp M             &hmr RGUI N      &hmr RALT E  &hmr RCTRL I  &hmr RSHFT A         &kp SQT
-&kp LSHFT  &kp Q         &kp J         &hml LG(C) V  &hml LG(LS(V)) D  &hml LG(V) K  &kp X             &kp H            &kp COMMA    &kp DOT       &kp FSLH             &hmr RALT ESC
-                                       &kp LCTRL     &lt 1 ENTER       &kp LGUI      &mt RSHIFT SPACE  &lt 2 BACKSPACE  &kp RGUI
+&kp TAB    &kp W         &kp L         &kp Y         &kp P         &kp B             &kp Z             &kp F            &kp O        &kp U         &swap_colon_semi     &kp BSPC
+&kp GRAVE  &hml LSHFT C  &hml LCTRL R  &hml LALT S   &hml LGU      &kp G             &kp M             &hmr RGUI N      &hmr RALT E  &hmr RCTRL I  &hmr RSHFT A         &kp SQT
+&kp LSHFT  &kp Q         &kp J         &hml LG(C) V  &hml LG(V) D  &hml LG(LS(V)) K  &kp X             &kp H            &kp COMMA    &kp DOT       &kp FSLH             &hmr RALT ESC
+                                       &kp LCTRL     &lt 1 ENTER   &kp LGUI          &mt RSHIFT SPACE  &lt 2 BACKSPACE  &kp RGUI
             >;
         };
 
@@ -98,10 +98,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp N1        &hml LG(LA(N2)) N2 &kp N3        &hml LG(LS(N4)) N4  &kp N5            &kp N6            &kp N7       &kp N8       &kp N9        &kp N0          &kp BSPC
-&kp LCTRL  &kp LEFT      &kp DOWN           &kp UP        &kp RIGHT          &kp EQUAL         &kp MINUS         &hmr LGUI N4  &hmr LALT N5  &hmr LCTRL N6  &hmr LSHFT PLUS  &kp ASTRK
-&kp LSHFT  &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3       &studio_unlock    &kp N0            &kp N1       &kp N2       &kp N3        &kp PERIOD      &kp SLASH
-                                            &kp LCTRL     &trans             &kp LGUI          &mt LSHIFT SPACE  &lt 3 DEL    &kp N0
+&kp TAB    &kp N1        &hml LG(LA(N2)) N2 &kp N3        &hml LG(LS(N4)) N4  &kp N5            &kp N6            &kp N7        &kp N8        &kp N9         &kp N0           &kp BSPC
+&kp LCTRL  &kp LEFT      &kp DOWN           &kp UP        &kp RIGHT           &kp EQUAL         &kp MINUS         &hmr LGUI N4  &hmr LALT N5  &hmr LCTRL N6  &hmr LSHFT PLUS  &kp ASTRK
+&kp LSHFT  &bt BT_SEL 0  &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3        &studio_unlock    &kp EQUAL         &kp N1        &kp N2        &kp N3         &kp PERIOD       &kp SLASH
+                                            &kp LCTRL     &trans              &kp LGUI          &mt LSHIFT SPACE  &lt 3 DEL     &kp N0
             >;
         };
 
