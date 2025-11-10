@@ -99,10 +99,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp N1        &hml LG(LA(N2)) N2  &kp N3        &hml LG(LS(N4)) N4  &kp N5            &kp N6            &kp N7        &kp N8        &kp N9         &kp N0           &kp BSPC
-&kp LCTRL  &kp LEFT      &kp DOWN            &kp UP        &kp RIGHT           &kp EQUAL         &kp MINUS         &hmr LGUI N4  &hmr LALT N5  &hmr LCTRL N6  &hmr LSHFT PLUS  &kp ASTRK
-&kp LSHFT  &bt BT_SEL 0  &bt BT_SEL 1        &bt BT_SEL 2  &bt BT_SEL 3        &studio_unlock    &kp EQUAL         &kp N1        &kp N2        &kp N3         &kp PERIOD       &kp SLASH
-                                             &kp LCTRL     &trans              &kp LGUI          &mt LSHIFT SPACE  &lt 3 DEL     &kp N0
+&kp TAB    &kp N1    &hml LG(LA(N2)) N2  &kp N3     &hml LG(LS(N4)) N4  &kp N5       &kp N6            &kp N7        &kp N8        &kp N9         &kp N0           &kp BSPC
+&kp LCTRL  &kp LEFT  &kp DOWN            &kp UP     &kp RIGHT           &kp EQUAL    &kp MINUS         &hmr LGUI N4  &hmr LALT N5  &hmr LCTRL N6  &hmr LSHFT PLUS  &kp ASTRK
+&kp LSHFT  &trans    &trans              &trans     &trans              &trans       &kp EQUAL         &kp N1        &kp N2        &kp N3         &kp PERIOD       &kp SLASH
+                                         &kp LCTRL  &trans              &kp LGUI     &mt LSHIFT SPACE  &lt 3 DEL     &kp N0
             >;
         };
 
@@ -125,10 +125,10 @@
 
         utility_layer {
             bindings = <
-&trans  &bt BT_CLR_ALL        &trans             &trans           &trans                &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &email                &trans             &trans           &trans                &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                                 &trans           &trans                &trans    &trans  &trans  &trans
+&trans  &bt BT_CLR_ALL        &trans             &trans           &trans                &trans    &trans          &trans        &trans        &trans        &trans        &trans
+&trans  &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC  &trans    &studio_unlock  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &email                &trans             &trans           &trans                &trans    &trans          &trans        &trans        &trans        &trans        &trans
+                                                 &trans           &trans                &trans    &trans          &trans        &trans
             >;
         };
     };
