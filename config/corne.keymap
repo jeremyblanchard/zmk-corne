@@ -83,7 +83,7 @@
 
             bindings = <
 &kp TAB    &kp W         &kp L         &kp Y         &kp P         &kp B               &kp Z             &kp F            &kp O        &kp U         &swap_colon_semi  &kp BSPC
-&kp GRAVE  &hml LSHFT C  &hml LCTRL R  &hml LALT S   &hml LGUI A   &kp G               &kp M             &hmr RGUI N      &hmr RALT E  &hmr RCTRL I  &hmr RSHFT A      &kp SQT
+&kp GRAVE  &hml LSHFT C  &hml LCTRL R  &hml LALT S   &hml LGUI T   &kp G               &kp M             &hmr RGUI N      &hmr RALT E  &hmr RCTRL I  &hmr RSHFT A      &kp SQT
 &kp LSHFT  &kp Q         &kp J         &hml LG(C) V  &hml LG(V) D  &hml LG(LS(V)) K    &kp X             &kp H            &kp COMMA    &kp DOT       &kp FSLH          &hmr RALT ESC
                                        &kp LCTRL     &lt 1 ENTER   &kp LGUI            &mt RSHIFT SPACE  &lt 2 BACKSPACE  &kp RGUI
             >;
@@ -125,10 +125,10 @@
 
         utility_layer {
             bindings = <
-&trans  &bt BT_CLR_ALL        &trans        &trans           &trans                &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp C_BRIGHTNESS_DEC  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &email                &trans        &trans           &trans                &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                            &trans           &trans                &trans    &trans  &trans  &trans
+&trans  &bt BT_CLR_ALL        &trans           &trans           &trans                &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &email                &trans           &trans           &trans                &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                               &trans           &trans                &trans    &trans  &trans  &trans
             >;
         };
     };
