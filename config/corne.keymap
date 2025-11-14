@@ -67,6 +67,51 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        swap_sqt_lpar: swap_sqt_lpar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SWAP_SQT_LPAR";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>, <&kp LPAR>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        swap_dqt_rpar: swap_dqt_rpar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SWAP_DQT_RPAR";
+            #binding-cells = <0>;
+            bindings = <&kp DQT>, <&kp RPAR>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        swap_comma_semi: swap_comma_semi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SWAP_COMMA_SEMI";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp SEMI>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        swap_dot_colon: swap_dot_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SWAP_DOT_COLON";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp COLON>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        swap_qmark_slash: swap_qmark_slash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SWAP_QMARK_SLASH";
+            #binding-cells = <0>;
+            bindings = <&kp QMARK>, <&kp SLASH>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -82,10 +127,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp W         &kp L         &kp Y         &kp P         &kp B               &kp Z             &kp F            &kp O        &kp U         &swap_colon_semi  &kp BSPC
-&kp GRAVE  &hml LSHFT C  &hml LCTRL R  &hml LALT S   &hml LGUI T   &kp G               &kp M             &hmr RGUI N      &hmr RALT E  &hmr RCTRL I  &hmr RSHFT A      &kp SQT
-&kp LSHFT  &kp Q         &kp J         &hml LG(C) V  &hml LG(V) D  &hml LG(LS(V)) K    &kp X             &kp H            &kp COMMA    &kp DOT       &kp FSLH          &hmr RALT ESC
-                                       &kp LCTRL     &lt 1 ENTER   &kp LGUI            &mt RSHIFT SPACE  &lt 2 BACKSPACE  &kp RGUI
+&kp TAB    &kp GRAVE        &kp Y         &kp O         &kp U         &swap_sqt_lpar      &swap_dqt_rpar     &kp L            &kp D        &kp W         &kp ESC            &kp BSPC
+&kp B      &hml LSHFT C     &hml LCTRL I  &hml LALT E   &hml LGUI A   &swap_comma_semi    &swap_dot_colon    &hmr RGUI H      &hmr RALT T  &hmr RCTRL S  &hmr RSHFT N      &kp V
+&kp Z      &kp G            &kp X         &kp J         &kp K         &kp MINUS           &swap_qmark_slash  &kp R            &kp M        &kp F         &kp P             &kp Q
+                                          &kp LCTRL     &lt 1 ENTER   &kp LGUI            &mt RSHIFT SPACE   &lt 2 BACKSPACE  &kp RGUI
             >;
         };
 
