@@ -24,6 +24,15 @@
             bindings = <&kp J &kp J &kp M &kp B &kp L &kp A &kp N &kp C &kp H &kp A &kp R &kp D &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
             label = "EMAIL";
         };
+
+        hyper: hyper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI &kp LSHIFT &kp LALT>,
+                       <&macro_pause_for_release>,
+                       <&macro_release &kp LGUI &kp LSHIFT &kp LALT>;
+            label = "HYPER";
+        };
     };
 
     behaviors {
@@ -57,6 +66,16 @@
 
             hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20>;
             hold-trigger-on-release;
+        };
+
+        tab_hyper: tab_hyper {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAB_HYPER";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            bindings = <&hyper>, <&kp>;
         };
 
         swap_colon_semi: swap_colon_semi {
@@ -127,7 +146,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp GRAVE        &kp Y         &kp O         &kp U         &swap_sqt_lpar       &swap_dqt_rpar     &kp L            &kp D        &kp W         &kp ESC            &kp BSPC
+&tab_hyper 0 TAB    &kp GRAVE        &kp Y         &kp O         &kp U         &swap_sqt_lpar       &swap_dqt_rpar     &kp L            &kp D        &kp W         &kp ESC            &kp BSPC
 &kp B      &hml LSHFT C     &hml LCTRL I  &hml LALT E   &hml LGUI A   &swap_comma_semi     &swap_dot_colon    &hmr RGUI H      &hmr RALT T  &hmr RCTRL S  &hmr RSHFT N      &kp V
 &kp Z      &kp G            &hml LG(X) X  &hml LG(C) J  &hml LG(V) K  &hml LG(LS(V)) MINUS &swap_qmark_slash  &kp R            &kp M        &kp F         &kp P             &kp Q
                                           &kp LCTRL     &lt 1 ENTER   &kp LGUI             &mt RSHIFT SPACE   &lt 2 BACKSPACE  &kp RGUI
