@@ -33,6 +33,42 @@
                        <&macro_release &kp LGUI &kp LSHIFT &kp LALT>;
             label = "HYPER";
         };
+
+        scroll_left: scroll_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL &kp LGUI &kp LALT>,
+                       <&macro_tap &kp LEFT>,
+                       <&macro_release &kp LCTRL &kp LGUI &kp LALT>;
+            label = "SCROLL_LEFT";
+        };
+
+        scroll_down: scroll_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL &kp LGUI &kp LALT>,
+                       <&macro_tap &kp DOWN>,
+                       <&macro_release &kp LCTRL &kp LGUI &kp LALT>;
+            label = "SCROLL_DOWN";
+        };
+
+        scroll_up: scroll_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL &kp LGUI &kp LALT>,
+                       <&macro_tap &kp UP>,
+                       <&macro_release &kp LCTRL &kp LGUI &kp LALT>;
+            label = "SCROLL_UP";
+        };
+
+        scroll_right: scroll_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL &kp LGUI &kp LALT>,
+                       <&macro_tap &kp RIGHT>,
+                       <&macro_release &kp LCTRL &kp LGUI &kp LALT>;
+            label = "SCROLL_RIGHT";
+        };
     };
 
     behaviors {
@@ -158,15 +194,15 @@
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+            // | BTCLR| LFT | DWN |  UP | RGT |  =  |   |  -  |  4  |  5  |  6  |  +  |  *   |
+            // | SHFT | SCL | SCD | SCU | SCR |     |   |  =  |  1  |  2  |  3  |  .  |  /   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp N1    &hml LG(LA(N2)) N2  &kp N3     &hml LG(LS(N4)) N4  &kp N5       &kp N6            &kp N7        &kp N8        &kp N9         &kp N0           &kp BSPC
-&kp LCTRL  &kp LEFT  &kp DOWN            &kp UP     &kp RIGHT           &kp EQUAL    &kp MINUS         &hmr LGUI N4  &hmr LALT N5  &hmr LCTRL N6  &hmr LSHFT PLUS  &kp ASTRK
-&kp LSHFT  &trans    &trans              &trans     &trans              &trans       &kp EQUAL         &kp N1        &kp N2        &kp N3         &kp PERIOD       &kp SLASH
-                                         &kp LCTRL  &trans              &kp LGUI     &mt LSHIFT SPACE  &lt 3 DEL     &kp N0
+&kp TAB    &kp N1         &hml LG(LA(N2)) N2  &kp N3     &hml LG(LS(N4)) N4  &kp N5       &kp N6            &kp N7        &kp N8        &kp N9         &kp N0           &kp BSPC
+&kp LCTRL  &kp LEFT       &kp DOWN            &kp UP     &kp RIGHT           &kp EQUAL    &kp MINUS         &hmr LGUI N4  &hmr LALT N5  &hmr LCTRL N6  &hmr LSHFT PLUS  &kp ASTRK
+&kp LSHFT  &scroll_left   &scroll_down        &scroll_up &scroll_right       &trans       &kp EQUAL         &kp N1        &kp N2        &kp N3         &kp PERIOD       &kp SLASH
+                                              &kp LCTRL  &trans              &kp LGUI     &mt LSHIFT SPACE  &lt 3 DEL     &kp N0
             >;
         };
 
