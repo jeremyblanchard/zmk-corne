@@ -183,7 +183,7 @@
 
             bindings = <
 &tab_hyper 0 TAB    &kp Z            &kp Y         &kp O         &kp U         &swap_sqt_lpar       &swap_dqt_rpar     &kp L            &kp D        &kp W         &kp Q             &kp BSPC
-&kp B               &hml LSHFT C     &hml LCTRL I  &hml LALT E   &hml LGUI A   &swap_comma_semi     &swap_dot_colon    &hmr RGUI H      &hmr RALT T  &hmr RCTRL S  &hmr RSHFT N      &kp 6V
+&kp B               &hml LSHFT C     &hml LCTRL I  &hml LALT E   &hml LGUI A   &swap_comma_semi     &swap_dot_colon    &hmr RGUI H      &hmr RALT T  &hmr RCTRL S  &hmr RSHFT N      &kp V
 &kp GRAVE           &kp G            &hml LG(X) X  &hml LG(C) J  &hml LG(V) K  &hml LG(LS(V)) MINUS &swap_qmark_slash  &kp R            &kp M        &kp F         &kp P             &kp ESC
                                                    &kp LCTRL     &lt 1 ENTER   &kp LGUI             &mt RSHIFT SPACE   &lt 2 BACKSPACE  &kp RGUI
             >;
