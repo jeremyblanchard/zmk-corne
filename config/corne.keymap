@@ -221,7 +221,7 @@
             bindings = <
 &trans     &kp N1        &hml LG(LA(N2)) N2  &kp N3      &hml LG(LS(N4)) N4  &kp N5       &kp N6            &kp N7        &kp N8        &kp N9         &kp N0           &trans
 &kp LCTRL  &kp LEFT      &kp DOWN            &kp UP      &kp RIGHT           &kp EQUAL    &kp MINUS         &hmr LGUI N4  &hmr LALT N5  &hmr LCTRL N6  &hmr LSHFT PLUS  &kp ASTRK
-&trans     &scroll_left  &scroll_down        &scroll_up  &scroll_right       &trans       &kp EQUAL         &kp N1        &kp N2        &kp N3         &kp PERIOD       &trans
+&trans     &scroll_left  &scroll_down        &scroll_up  &scroll_right       &trans       &kp SLASH         &kp N1        &kp N2        &kp N3         &kp PERIOD       &trans
                                              &kp LCTRL   &trans              &kp LGUI     &mt LSHIFT SPACE  &lt 3 DEL     &kp N0
             >;
         };
