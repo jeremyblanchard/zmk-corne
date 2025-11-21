@@ -129,8 +129,8 @@
             label = "TAB_HYPER";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
+            tapping-term-ms = <175>;
+            quick-tap-ms = <150>;
             bindings = <&hyper>, <&kp>;
         };
 
@@ -205,7 +205,7 @@
 &trans  &kp Z         &kp Y         &kp O             &kp U         &swap_sqt_lpar          &swap_dqt_rpar     &kp L            &kp D          &kp W         &kp Q         &trans
 &kp B   &hml LSHFT C  &hml LCTRL I  &hml LALT E       &hml LGUI A   &swap_comma_semi        &swap_dot_colon    &hmr RGUI H      &hmr RALT T    &hmr RCTRL S  &hmr RSHFT N  &kp V
 &trans  &kp G         &hml LG(X) X  &hml LG(C) J      &hml LG(V) K  &hml LG(LS(V)) MINUS    &swap_qmark_slash  &kp R            &kp M          &kp F         &kp P         &trans
-                                    &tab_hyper 0 TAB  &lt 1 GRAVE   &kp ENTER               &mt RSHIFT SPACE   &lt 2 BACKSPACE  &hmr BSPC ESC
+                                    &tab_hyper 0 TAB  &lt 1 GRAVE   &lt LGUI ENTER          &mt RSHIFT SPACE   &lt 2 BACKSPACE  &hmr BSPC ESC
             >;
         };
 
