@@ -202,17 +202,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-<<<<<<< Updated upstream
-&trans  &kp Q         &kp W         &kp E             &kp R         &kp T               &kp Y             &kp U            &kp I             &kp O            &kp P              &trans
-&trans  &hml LSHFT A  &hml LCTRL S  &hml LALT D       &hml LGUI F   &kp G               &kp H             &hmr RGUI J      &hmr RALT K       &hmr RCTRL L     &hmr RSHFT SQT     &trans
-&trans  &kp Z         &hml LG(X) X  &hml LG(C) C      &hml LG(V) V  &hml LG(LS(V)) B    &kp N             &kp M            &swap_comma_semi  &swap_dot_colon  &swap_qmark_slash  &trans
-                                    &tab_hyper 0 TAB  &lt 1 GRAVE   &mt LGUI ENTER      &mt RSHIFT SPACE  &lt 2 BACKSPACE  &hmr ESC BSPC
-=======
-&kp Q         &kp W         &kp E              &kp R         &kp T              &trans      &trans   &kp Y    &kp U         &kp I             &kp O            &kp P
-&hml LSHFT A  &hml LCTRL S  &hml LALT D        &hml LGUI F   &kp G              &trans      &trans   &kp H    &hmr RGUI J   &hmr RALT K       &hmr RCTRL L     &hmr RSHFT SQT
-&kp Z         &hml LG(X) X  &hml LG(C) C       &hml LG(V) V  &hml LG(LS(V)) B   &trans      &trans   &kp N    &kp M         &swap_comma_semi  &swap_dot_colon  &swap_qmark_slash
-                                        &tab_hyper 0 TAB   &lt 1 GRAVE   &kp ENTER            &mt RSHIFT SPACE       &lt 2 BACKSPACE   &hmr ESC BSPC
->>>>>>> Stashed changes
+&trans    &kp Q         &kp W         &kp E              &kp R         &kp T                &kp Y    &kp U         &kp I             &kp O            &kp P              &trans
+&trans    &hml LSHFT A  &hml LCTRL S  &hml LALT D        &hml LGUI F   &kp G                &kp H    &hmr RGUI J   &hmr RALT K       &hmr RCTRL L     &hmr RSHFT SQT     &trans
+&trans    &kp Z         &hml LG(X) X  &hml LG(C) C       &hml LG(V) V  &hml LG(LS(V)) B     &kp N    &kp M         &swap_comma_semi  &swap_dot_colon  &swap_qmark_slash  &trans
+                                      &tab_hyper 0 TAB   &lt 1 GRAVE   &kp ENTER            &mt RSHIFT SPACE       &lt 2 BACKSPACE   &hmr ESC BSPC
             >;
         };
 
@@ -226,10 +219,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1        &hml LG(LA(N2)) N2  &kp N3      &hml LG(LS(N4)) N4  &kp N5       &kp N6     &kp N7        &kp N8        &kp N9         &mt N0 ASTRK     &trans
-&trans  &kp LEFT      &kp DOWN            &kp UP      &kp RIGHT           &kp EQUAL    &kp MINUS  &hmr LGUI N4  &hmr LALT N5  &hmr LCTRL N6  &hmr LSHFT PLUS  &trans
-&trans  &scroll_left  &scroll_down        &scroll_up  &scroll_right       &trans       &kp SLASH  &kp N1        &kp N2        &kp N3         &kp PERIOD       &trans
-                                          &trans      &trans              &trans       &trans     &lt 3 DEL     &kp N0
+&trans     &kp N1        &hml LG(LA(N2)) N2  &kp N3      &hml LG(LS(N4)) N4  &kp N5       &kp N6            &kp N7        &kp N8        &kp N9         &kp N0           &trans
+&kp LCTRL  &kp LEFT      &kp DOWN            &kp UP      &kp RIGHT           &kp EQUAL    &kp MINUS         &hmr LGUI N4  &hmr LALT N5  &hmr LCTRL N6  &hmr LSHFT PLUS  &kp ASTRK
+&trans     &scroll_left  &scroll_down        &scroll_up  &scroll_right       &trans       &kp SLASH         &kp N1        &kp N2        &kp N3         &kp PERIOD       &trans
+                                             &kp LCTRL   &trans              &kp LGUI     &mt LSHIFT SPACE  &lt 3 DEL     &kp N0
             >;
         };
 
@@ -243,17 +236,17 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
-&trans  &trans    &trans  &trans    &trans    &kp COLON    &kp MINUS  &kp EQUAL  &kp BSLH   &kp LBKT  &kp RBKT  &trans
-&trans  &tog 0    &trans  &trans    &trans    &kp SEMI     &kp UNDER  &kp PLUS   &kp PIPE   &kp LBRC  &kp RBRC  &trans
-                          &trans    &trans    &trans       &trans     &trans     &trans
+&trans     &kp EXCL  &kp AT  &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET         &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
+&kp LCTRL  &trans    &trans  &trans     &trans    &kp COLON    &kp MINUS         &kp EQUAL  &kp BSLH   &kp LBKT  &kp RBKT  &kp GRAVE
+&trans     &tog 0    &trans  &trans     &trans    &kp SEMI     &kp UNDER         &kp PLUS   &kp PIPE   &kp LBRC  &kp RBRC  &trans
+                             &kp LCTRL  &kp RET   &kp LGUI     &mt RSHIFT SPACE  &trans     &trans
             >;
         };
 
         utility_layer {
             bindings = <
 &trans  &bt BT_CLR_ALL        &trans             &trans           &trans                &trans    &trans          &trans        &trans        &trans        &trans        &trans
-&trans  &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC  &trans    &studio_unlock  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans
+&trans  &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC  &trans    &studio_unlock  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &email                &trans             &trans           &trans                &trans    &trans          &trans        &trans        &trans        &trans        &trans
                                                  &trans           &trans                &trans    &trans          &trans        &trans
             >;
