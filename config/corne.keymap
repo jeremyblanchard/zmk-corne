@@ -202,10 +202,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp Q  &kp W         &kp E         &kp R             &kp T             &trans       &trans            &kp U            &kp I          &kp O             &kp P            &hmr RSHFT SQT
-&kp G  &hml LSHFT A  &hml LCTRL S  &hml LALT D       &hml LGUI F       &trans       &trans            &hmr RGUI J      &hmr RALT K    &hmr RCTRL L      &hmr RSHFT Y     &kp H
-&kp Z  &hml LG(X) X  &hml LG(C) C  &hml LG(V) V      &hml LG(LS(V)) B  &trans       &trans            &kp N            &kp M          &swap_comma_semi  &swap_dot_colon  &swap_qmark_slash
-                                   &tab_hyper 0 TAB  &lt 1 GRAVE       &kp ENTER    &mt RSHIFT SPACE  &lt 2 BACKSPACE  &hmr ESC BSPC
+&kp Q  &kp W         &kp E         &kp R             &kp T             &trans              &trans            &kp U            &kp I          &kp O             &kp P            &hmr RSHFT SQT
+&kp G  &hml LSHFT A  &hml LCTRL S  &hml LALT D       &hml LGUI F       &trans              &trans            &hmr RGUI J      &hmr RALT K    &hmr RCTRL L      &hmr RSHFT Y     &kp H
+&kp Z  &hml LG(X) X  &hml LG(C) C  &hml LG(V) V      &hml LG(LS(V)) B  &trans              &trans            &kp N            &kp M          &swap_comma_semi  &swap_dot_colon  &swap_qmark_slash
+                                   &tab_hyper 0 TAB  &lt 1 GRAVE       &mt LSHIFT ENTER    &mt RSHIFT SPACE  &lt 2 BACKSPACE  &hmr ESC BSPC
             >;
         };
 
