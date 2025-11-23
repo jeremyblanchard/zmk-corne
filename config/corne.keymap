@@ -202,8 +202,8 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp Q         &kp W         &kp E              &kp R         &kp T              &trans      &trans   &kp Y    &kp U         &kp I             &kp O            &kp P
-&hml LSHFT A  &hml LCTRL S  &hml LALT D        &hml LGUI F   &kp G              &trans      &trans   &kp H    &hmr RGUI J   &hmr RALT K       &hmr RCTRL L     &hmr RSHFT SQT
+&kp Q         &kp W         &kp E              &kp R         &kp T              &trans      &trans   &kp Y    &kp U         &kp I             &kp O            &hmr RSHFT SQT
+&kp G         &hml LSHFT A  &hml LCTRL S       &hml LALT D   &hml LGUI F        &trans      &trans   &kp H    &hmr RGUI J   &hmr RALT K       &hmr RCTRL L     &kp P
 &kp Z         &hml LG(X) X  &hml LG(C) C       &hml LG(V) V  &hml LG(LS(V)) B   &trans      &trans   &kp N    &kp M         &swap_comma_semi  &swap_dot_colon  &swap_qmark_slash
                                         &tab_hyper 0 TAB   &lt 1 GRAVE   &kp ENTER            &mt RSHIFT SPACE       &lt 2 BACKSPACE   &hmr ESC BSPC
             >;
@@ -219,9 +219,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp N1        &hml LG(LA(N2)) N2  &kp N3      &hml LG(LS(N4)) N4  &kp N5       &trans  &trans  &kp N6     &kp N7        &kp N8        &kp N9         &mt N0 ASTRK
-&kp LEFT      &kp DOWN            &kp UP      &kp RIGHT           &kp EQUAL    &trans  &trans  &kp MINUS  &hmr LGUI N4  &hmr LALT N5  &hmr LCTRL N6  &hmr LSHFT PLUS
-&scroll_left  &scroll_down        &scroll_up  &scroll_right       &trans       &trans  &trans  &kp SLASH  &kp N1        &kp N2        &kp N3         &kp PERIOD
+&kp N1        &hml LG(LA(N2)) N2  &kp N3         &hml LG(LS(N4)) N4  &kp N5         &trans  &trans  &kp N6        &kp N7        &kp N8         &kp N9            &mt N0 ASTRK
+&kp EQUAL     &kp LEFT            &kp DOWN       &kp UP              &kp RIGHT      &trans  &trans  &hmr LGUI N4  &hmr LALT N5  &hmr LCTRL N6  &hmr LSHFT PLUS   &kp MINUS
+&trans        &scroll_left        &scroll_down   &scroll_up          &scroll_right  &trans  &trans  &kp N1        &kp N2        &kp N3         &kp PERIOD        &kp SLASH
                                           &trans      &trans              &trans       &trans     &lt 3 DEL     &kp N0
             >;
         };
@@ -245,9 +245,9 @@
 
         utility_layer {
             bindings = <
-&bt BT_CLR_ALL        &trans             &trans           &trans                &trans &trans  &trans     &trans          &trans        &trans        &trans        &trans
-&kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC  &trans &trans  &trans     &studio_unlock  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
-&email                &trans             &trans           &trans                &trans &trans  &trans     &trans          &trans        &trans        &trans        &trans
+&bt BT_CLR_ALL   &trans               &trans             &trans           &trans                &trans  &trans     &trans        &trans        &trans        &trans        &trans
+&email           &kp C_BRIGHTNESS_DEC &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC  &trans  &trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &studio_unlock
+&trans           &trans               &trans             &trans           &trans                &trans  &trans     &trans        &trans        &trans        &trans        &trans
                                                  &trans           &trans                &trans    &trans          &trans        &trans
             >;
         };
