@@ -224,8 +224,8 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q         &kp W         &kp E             &kp R         &kp T               &kp Y             &kp U            &kp I             &kp O            &kp P            &trans
-&trans  &hml LSHFT A  &hml LCTRL S  &hml LALT D       &hml LGUI F   &kp G               &kp H             &hmr RGUI J      &hmr RALT K       &hmr RCTRL L     &hmr RSHFT SQT       &trans
+&trans  &kp Q         &kp W         &kp E             &kp R         &kp T               &kp Y             &kp U            &kp I             &kp O            &kp SQT            &trans
+&trans  &hml LSHFT A  &hml LCTRL S  &hml LALT D       &hml LGUI F   &kp G               &kp H             &hmr RGUI J      &hmr RALT K       &hmr RCTRL L     &hmr RSHFT P       &trans
 &trans  &kp Z         &hml LG(X) X  &hml LG(C) C      &hml LG(V) V  &hml LG(LS(V)) B    &kp N             &kp M            &swap_comma_semi  &swap_dot_colon  &swap_qmark_slash  &trans
                                     &tab_hyper 0 TAB  &lt 1 GRAVE   &tkl LGUI ENTER     &tkr RSHIFT SPACE  &lt 2 BACKSPACE  &hmr BSPC ESC
             >;
