@@ -224,9 +224,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q         &kp W         &kp E             &kp R         &kp T               &kp Y             &kp U            &kp I             &kp O            &kp P            &trans
-&trans  &hml LSHFT A  &hml LCTRL S  &hml LALT D       &hml LGUI F   &kp G               &kp H             &hmr RGUI J      &hmr RALT K       &hmr RCTRL L     &hmr RSHFT SQT       &trans
-&trans  &kp Z         &hml LG(X) X  &hml LG(C) C      &hml LG(V) V  &hml LG(LS(V)) B    &kp N             &kp M            &swap_comma_semi  &swap_dot_colon  &swap_qmark_slash  &trans
+&trans  &kp Q         &kp W         &kp E             &kp R         &kp T               &kp Y              &kp U            &kp I             &kp O            &kp P              &trans
+&trans  &hml LSHFT A  &hml LCTRL S  &hml LALT D       &hml LGUI F   &kp G               &kp H              &hmr RGUI J      &hmr RALT K       &hmr RCTRL L     &hmr RSHFT SQT     &trans
+&trans  &kp Z         &hml LG(X) X  &hml LG(C) C      &hml LG(V) V  &hml LG(LS(V)) B    &kp N              &kp M            &swap_comma_semi  &swap_dot_colon  &swap_qmark_slash  &trans
                                     &tab_hyper 0 TAB  &lt 1 GRAVE   &tkl LGUI ENTER     &tkr RSHIFT SPACE  &lt 2 BACKSPACE  &hmr BSPC ESC
             >;
         };
@@ -258,10 +258,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
-&trans  &trans    &trans  &trans    &trans    &kp COLON    &kp MINUS  &kp EQUAL  &kp BSLH   &kp LBKT  &kp RBKT  &trans
-&trans  &tog 0    &trans  &trans    &trans    &kp SEMI     &kp UNDER  &kp PLUS   &kp PIPE   &kp LBRC  &kp RBRC  &trans
-                          &trans    &trans    &trans       &trans     &trans     &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR          &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
+&trans  &trans    &trans  &trans    &kp GREATER_THAN  &kp COLON    &kp MINUS  &kp EQUAL  &kp BSLH   &kp LBKT  &kp RBKT  &trans
+&trans  &tog 0    &trans  &trans    &kp LESS_THAN     &kp SEMI     &kp UNDER  &kp PLUS   &kp PIPE   &kp LBRC  &kp RBRC  &trans
+                          &trans    &trans            &trans       &trans     &trans     &trans
             >;
         };
 
