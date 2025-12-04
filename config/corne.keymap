@@ -224,10 +224,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q         &kp W         &kp E             &kp R              &kp T               &kp Y              &kp U             &kp I             &kp O            &kp P              &trans
-&trans  &hml LSHFT A  &hml LCTRL S  &hml LALT D       &hml LGUI F        &kp G               &kp H              &hmr RGUI J       &hmr RALT K       &hmr RCTRL L     &hmr RSHFT SQT     &trans
-&trans  &kp Z         &hml LG(X) X  &hml LG(C) C      &hml LG(V) V       &hml LG(LS(V)) B    &kp N              &kp M             &swap_comma_semi  &swap_dot_colon  &swap_qmark_slash  &trans
-                                    &tab_hyper 0 TAB  &lt 1 GRAVE        &tkl LGUI ENTER     &tkr RSHIFT SPACE  &lt 2 BSPC        &hmr BSPC ESC
+&trans  &kp Q         &kp W         &kp E             &kp R         &kp T               &kp Y              &kp U        &kp I             &kp O            &kp P           &trans
+&trans  &hml LSHFT A  &hml LCTRL S  &hml LALT D       &hml LGUI F   &kp G               &kp H              &hmr RGUI J  &hmr RALT K       &hmr RCTRL L     &hmr RSHFT SQT  &trans
+&trans  &kp Z         &hml LG(X) X  &hml LG(C) C      &hml LG(V) V  &hml LG(LS(V)) B    &kp N              &kp M        &swap_comma_semi  &swap_dot_colon  &kp SLASH       &trans
+                                    &tab_hyper 0 TAB  &lt 1 GRAVE   &tkl LGUI ENTER     &tkr RSHIFT SPACE  &lt 2 BSPC   &hmr BSPC ESC
             >;
         };
 
@@ -241,10 +241,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1        &hml LG(LA(N2)) N2  &kp N3      &hml LG(LS(N4)) N4  &kp N5       &kp N6       &kp N7        &kp N8        &kp N9         &kp ASTRK        &trans
-&trans  &kp LEFT      &kp DOWN            &kp UP      &kp RIGHT           &kp EQUAL    &kp MINUS    &hmr LGUI N4  &hmr LALT N5  &hmr LCTRL N6  &hmr LSHFT PLUS  &trans
-&trans  &scroll_left  &scroll_down        &scroll_up  &scroll_right       &trans       &kp SLASH    &kp N1        &kp N2        &kp N3         &kp PERIOD       &trans
-                                          &kp ESC     &trans              &trans       &trans       &lt 3 DEL     &kp N0
+&trans  &kp N1        &hml LG(LA(N2)) N2  &kp N3      &hml LG(LS(N4)) N4  &kp N5       &kp N6     &kp N7        &kp N8        &kp N9         &kp ASTRK        &trans
+&trans  &kp LEFT      &kp DOWN            &kp UP      &kp RIGHT           &kp EQUAL    &kp MINUS  &hmr LGUI N4  &hmr LALT N5  &hmr LCTRL N6  &hmr LSHFT PLUS  &trans
+&trans  &scroll_left  &scroll_down        &scroll_up  &scroll_right       &trans       &kp SLASH  &kp N1        &kp N2        &kp N3         &kp PERIOD       &trans
+                                          &kp ESC     &trans              &trans       &trans     &lt 3 DEL     &kp N0
             >;
         };
 
