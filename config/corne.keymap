@@ -25,6 +25,20 @@
             label = "EMAIL";
         };
 
+        greateq: greateq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ≥>;
+            label = "GREATEQ";
+        };
+
+        lesseq: lesseq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ≥>;
+            label = "LESSEQ";
+        };
+
         hyper: hyper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -259,8 +273,8 @@
 
             bindings = <
 &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR          &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
-&trans  &trans    &trans  &trans    &kp GREATER_THAN  &kp COLON    &kp MINUS  &kp EQUAL  &kp BSLH   &kp LBKT  &kp RBKT  &trans
-&trans  &tog 0    &trans  &trans    &kp LESS_THAN     &kp SEMI     &kp UNDER  &kp PLUS   &kp PIPE   &kp LBRC  &kp RBRC  &trans
+&trans  &trans    &trans  &greateq  &kp GREATER_THAN  &kp COLON    &kp MINUS  &kp EQUAL  &kp BSLH   &kp LBKT  &kp RBKT  &trans
+&trans  &tog 0    &trans  &lesseq   &kp LESS_THAN     &kp SEMI     &kp UNDER  &kp PLUS   &kp PIPE   &kp LBRC  &kp RBRC  &trans
                           &trans    &trans            &trans       &trans     &trans     &trans
             >;
         };
