@@ -28,14 +28,14 @@
         greateq: greateq {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LALT &kp LSHFT &macro_tap &kp DOT &macro_release &kp LALT &kp LSHFT>;
+            bindings = <&macro_press &kp LALT &macro_tap &kp DOT &macro_release &kp LALT>;
             label = "GREATEQ";
         };
 
         lesseq: lesseq {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LALT &kp LSHFT &macro_tap &kp COMMA &macro_release &kp LALT &kp LSHFT>;
+            bindings = <&macro_press &kp LALT &macro_tap &kp COMMA &macro_release &kp LALT>;
             label = "LESSEQ";
         };
 
