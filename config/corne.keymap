@@ -284,15 +284,17 @@
 
             // Hold Tab and press an app key. The layer emits collision-resistant
             // synthetic shortcuts for Hammerspoon instead of ordinary letters.
+            // F13-F20 use unshifted and shifted modifier banks because macOS
+            // does not expose F21-F24 as bindable virtual keycodes.
             //
             // |     |     |     | MUTE|     |     |   |VIDEO|     |     | OBS |     |     |
             // |     |  A  |  S  |  D  |  F  |  G  |   |     |     |     |  L  |     |     |
             // |     |  Z  |  X  |  C  |  V  |  B  |   |     |     |     |     |     |     |
 
             bindings = <
-&none  &none                       &none                       &kp ZOOM_SIGNAL(F13)  &none                       &none                       &kp ZOOM_SIGNAL(F14)  &none  &none  &kp APP_SIGNAL(F23)  &none  &none
-&none  &kp APP_SIGNAL(F13)         &kp APP_SIGNAL(F14)         &kp APP_SIGNAL(F15)   &kp APP_SIGNAL(F16)         &kp APP_SIGNAL(F17)         &none                  &none  &none  &kp APP_SIGNAL(F24)  &none  &none
-&none  &kp APP_SIGNAL(F18)         &kp APP_SIGNAL(F19)         &kp APP_SIGNAL(F20)   &kp APP_SIGNAL(F21)         &kp APP_SIGNAL(F22)         &none                  &none  &none  &none                &none  &none
+&none  &none                       &none                       &kp ZOOM_SIGNAL(F13)  &none                       &none                       &kp ZOOM_SIGNAL(F14)  &none  &none  &kp ZOOM_SIGNAL(F17)  &none  &none
+&none  &kp APP_SIGNAL(F13)         &kp APP_SIGNAL(F14)         &kp APP_SIGNAL(F15)   &kp APP_SIGNAL(F16)         &kp APP_SIGNAL(F17)         &none                  &none  &none  &kp ZOOM_SIGNAL(F18)  &none  &none
+&none  &kp APP_SIGNAL(F18)         &kp APP_SIGNAL(F19)         &kp APP_SIGNAL(F20)   &kp ZOOM_SIGNAL(F15)        &kp ZOOM_SIGNAL(F16)        &none                  &none  &none  &none                 &none  &none
                                                                  &none                &none                       &none                       &none                  &none  &none
             >;
         };
