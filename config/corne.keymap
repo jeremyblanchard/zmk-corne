@@ -44,10 +44,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LGUI &kp LSHIFT &kp LALT>,
+                <&kp LGUI &kp LCTRL &kp LSHIFT &kp LALT>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&kp LGUI &kp LSHIFT &kp LALT>;
+                <&kp LGUI &kp LCTRL &kp LSHIFT &kp LALT>;
 
             label = "HYPER";
         };
