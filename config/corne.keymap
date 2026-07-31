@@ -8,10 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-#define APP_LAYER 4
-#define APP_SIGNAL(key) LG(LC(LA(key)))
-#define ZOOM_SIGNAL(key) LG(LC(LA(LS(key))))
-
 / {
     macros {
         copy: copy {
@@ -232,7 +228,7 @@
 &trans  &kp Q         &kp W         &kp E             &kp R         &kp T               &kp Y      &kp U        &kp I             &kp O            &kp P              &trans
 &trans  &hml LSHFT A  &hml LCTRL S  &hml LALT D       &hml LGUI F   &kp G               &kp H      &hmr RGUI J  &hmr RALT K       &hmr RCTRL L     &hmr RSHFT SQT     &trans
 &trans  &kp Z         &hml LG(X) X  &hml LG(C) C      &hml LG(V) V  &hml LG(LS(V)) B    &kp N      &kp M        &swap_comma_semi  &swap_dot_colon  &swap_qmark_slash  &trans
-                                    &tab_app APP_LAYER TAB  &lt 1 GRAVE   &lt 2 ENTER         &kp SPACE  &kp RSHIFT   &kp BACKSPACE
+                                    &tab_app 4 TAB  &lt 1 GRAVE   &lt 2 ENTER         &kp SPACE  &kp RSHIFT   &kp BACKSPACE
             >;
         };
 
@@ -292,9 +288,9 @@
             // |     |  Z  |  X  |  C  |  V  |  B  |   |     |     |     |     |     |     |
 
             bindings = <
-&none  &none                       &none                       &kp ZOOM_SIGNAL(F13)  &none                       &none                       &kp ZOOM_SIGNAL(F14)  &none  &none  &kp ZOOM_SIGNAL(F17)  &none  &none
-&none  &kp APP_SIGNAL(F13)         &kp APP_SIGNAL(F14)         &kp APP_SIGNAL(F15)   &kp APP_SIGNAL(F16)         &kp APP_SIGNAL(F17)         &none                  &none  &none  &kp ZOOM_SIGNAL(F18)  &none  &none
-&none  &kp APP_SIGNAL(F18)         &kp APP_SIGNAL(F19)         &kp APP_SIGNAL(F20)   &kp ZOOM_SIGNAL(F15)        &kp ZOOM_SIGNAL(F16)        &none                  &none  &none  &none                 &none  &none
+&none  &none                     &none                     &kp LG(LC(LA(LS(F13))))  &none                     &none                     &kp LG(LC(LA(LS(F14))))  &none  &none  &kp LG(LC(LA(LS(F17))))  &none  &none
+&none  &kp LG(LC(LA(F13)))       &kp LG(LC(LA(F14)))       &kp LG(LC(LA(F15)))      &kp LG(LC(LA(F16)))       &kp LG(LC(LA(F17)))       &none                      &none  &none  &kp LG(LC(LA(LS(F18))))  &none  &none
+&none  &kp LG(LC(LA(F18)))       &kp LG(LC(LA(F19)))       &kp LG(LC(LA(F20)))      &kp LG(LC(LA(LS(F15))))  &kp LG(LC(LA(LS(F16))))  &none                      &none  &none  &none                      &none  &none
                                                                  &none                &none                       &none                       &none                  &none  &none
             >;
         };
