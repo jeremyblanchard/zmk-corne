@@ -25,6 +25,27 @@
             label = "EMAIL";
         };
 
+        shrug: shrug {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <20>;
+            tap-ms = <20>;
+            bindings =
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp N0 &kp N0 &kp A &kp F>,
+                <&macro_release &kp LALT>,
+                <&macro_tap &kp BSLH &kp UNDER &kp LPAR>,
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp N3 &kp N0 &kp C &kp N4>,
+                <&macro_release &kp LALT>,
+                <&macro_tap &kp RPAR &kp UNDER &kp SLASH>,
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp N0 &kp N0 &kp A &kp F>,
+                <&macro_release &kp LALT>;
+
+            label = "SHRUG";
+        };
+
         greateq: greateq {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -268,7 +289,7 @@
 
         utility_layer {
             bindings = <
-&trans  &bt BT_CLR_ALL        &trans             &trans           &trans                &trans    &trans          &trans        &trans        &trans        &trans        &trans
+&trans  &bt BT_CLR_ALL        &trans             &shrug           &trans                &trans    &trans          &trans        &trans        &trans        &trans        &trans
 &trans  &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC  &email    &studio_unlock  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans
 &trans  &trans                &trans             &trans           &trans                &trans    &trans          &trans        &trans        &trans        &trans        &trans
                                                  &trans           &trans                &trans    &trans          &trans        &trans
